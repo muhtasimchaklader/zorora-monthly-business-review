@@ -1,0 +1,20 @@
+event_id,start_month,end_month,event,kind,metric,expected_direction,citable,source
+E01,2023-11,2024-05,the marketing agency's Meta ads campaign,internal,share_leads_channel:Facebook,up,yes,Narrative v3 and data
+E02,2024-01,2024-12,"Canada's study permit cap, announced on 22 Jan 2024",external,share_leads_destination:Canada,down,yes,Public record (IRCC 22 Jan 2024) and data
+E03,2024-08,2024-12,the launch of the Masters and PG track,internal,leads_count_student_type:PG,up,yes,Narrative v3 and data
+E04,2024-08,2024-12,Application Strategy (BDT 30k) replaced by Application Support (BDT 35k),internal,,,no,Data; more low-priced single services in the same months hide the price rise in revenue per client
+E05,2024-08,2024-12,"the start of Cold Reactivation, which revisits old leads",internal,leads_count_channel:Cold Reactivation,up,yes,Asef and data
+E06,2024-12,2025-06,"Australia's visa rule change MD111, which eased visas for South Asian applicants",external,share_leads_destination:Australia,up,yes,Policy notes on file and data
+E07,2025-02,2025-04,the first formal Full Mentorship sale,internal,revenue_per_client,up,yes,Asef and data
+E08,2025-02,2025-04,the US demand dip after the 20 Jan 2025 inauguration,external,share_leads_destination:USA,down,yes,Narrative v3 and data (v3.1)
+E09,2025-03,2025-05,"the new lead operator taking over intake, with gate v1 soft triage going live",internal,close_rate,up,yes,Narrative v3 and data
+E10,2025-05,2025-09,the start of educator outreach,internal,share_leads_channel:Educator Referral,up,yes,Data (narrative says Jun-Jul 2025)
+E11,2025-06,2025-09,"gate v2 going live, which requires documents before the diagnostic call",internal,diag_to_close,up,yes,Narrative v3 and data
+E12,2025-07,2025-09,the first Full Mentorship Managed sale at BDT 85k,internal,revenue_per_client,up,yes,Data
+E13,2025-10,2026-01,"gate v3 going live, which adds a funding check after the diagnostic call",internal,diag_to_close,up,yes,Narrative v3 and data
+B01,2024-01,2024-01,UK rule: most international students can no longer bring dependants (from 1 Jan 2024),external,,,no,Public record; no data field can show it
+B02,2024-05,2024-05,Taka moved to a crawling peg at BDT 117 per USD,external,,,no,Bangladesh Bank circular 8 May 2024; no data field can show it
+B03,2024-07,2024-08,Bangladesh unrest; government falls 5 Aug 2024,external,,,no,Public record; no data field can show it
+B04,2024-10,2024-12,Canada cap hits the buying season,external,,,no,Asef's lag rule; too few Canada closes per quarter to measure
+B05,2025-06,2025-08,US visa interview pause hits students who had already paid,external,,,no,Policy notes on file; no visa outcome field
+B06,2025-10,2025-12,Canada refusal spike hits the buying season,external,,,no,Policy notes on file; too few Canada closes per quarter to measure

@@ -1,0 +1,184 @@
+{
+  "month": "2024-11",
+  "model": "claude-sonnet-5-5",
+  "source": "ai",
+  "attempts": [
+    {
+      "bullets": [
+        "Leads were {leads} in {leads_window}, against {leads_lm} in {leads_window_lm}. No comparison with last year is possible, as 2023 was the launch phase. This coincides with {driver:E03}.",
+        "MQLs were {mqls} in {mqls_window}, the same as {mqls_lm} in {mqls_window_lm}. Diagnostic calls were {diagnostic_calls} in {diagnostic_calls_window}, against {diagnostic_calls_lm} in {diagnostic_calls_window_lm}.",
+        "Paid clients were {paid_clients} in {paid_clients_window}, against {paid_clients_lm} in {paid_clients_window_lm}. Revenue was {revenue} in {revenue_window}, against {revenue_lm} in {revenue_window_lm}.",
+        "Close rate was {close_rate} for {close_rate_window}, against {close_rate_lm} for {close_rate_window_lm}. Diagnostic call to close was {diag_to_close} for {diag_to_close_window}, against {diag_to_close_lm} for {diag_to_close_window_lm}.",
+        "Warm Referral revenue per lead was {revenue_per_lead_warm_referral} for {close_rate_window}, against {revenue_per_lead_warm_referral_lm} for {close_rate_window_lm}. WhatsApp Organic was {revenue_per_lead_whatsapp_organic}, against {revenue_per_lead_whatsapp_organic_lm}.",
+        "Watch the close rate, now {close_rate}, and the MQL rate, now {mql_rate}, next month."
+      ],
+      "problems": [
+        "Bullet 1: contains a typed number. Use slots only."
+      ],
+      "reply": {
+        "stop_reason": "end_turn",
+        "blocks": [
+          "text"
+        ],
+        "text_start": "{\"bullets\":[\"Leads were {leads} in {leads_window}, against {leads_lm} in {leads_window_lm}. No comparison with last year is possible, as 2023 was the launch phase. This coincides with {driver:E03}.\",\"MQLs were {mqls} in {mqls_window}, the same as {mqls_lm} in {mqls_window_lm}. Diagnostic calls were "
+      }
+    },
+    {
+      "bullets": [
+        "Leads were {leads} in {leads_window}, against {leads_lm} in {leads_window_lm}. This coincides with {driver:E03}.",
+        "MQLs were {mqls} in {mqls_window}, against {mqls_lm} in {mqls_window_lm}. Diagnostic calls were {diagnostic_calls} in {diagnostic_calls_window}, against {diagnostic_calls_lm} in {diagnostic_calls_window_lm}.",
+        "Paid clients were {paid_clients} in {paid_clients_window}, against {paid_clients_lm} in {paid_clients_window_lm}. Revenue was {revenue} in {revenue_window}, against {revenue_lm} in {revenue_window_lm}.",
+        "Close rate was {close_rate} for {close_rate_window}, against {close_rate_lm} for {close_rate_window_lm}. Diagnostic call to close was {diag_to_close} for {diag_to_close_window}, against {diag_to_close_lm} for {diag_to_close_window_lm}.",
+        "Watch the close rate, now {close_rate}, and the MQL rate, now {mql_rate}."
+      ],
+      "problems": [],
+      "reply": {
+        "stop_reason": "end_turn",
+        "blocks": [
+          "text"
+        ],
+        "text_start": "{\"bullets\":[\"Leads were {leads} in {leads_window}, against {leads_lm} in {leads_window_lm}. This coincides with {driver:E03}.\",\"MQLs were {mqls} in {mqls_window}, against {mqls_lm} in {mqls_window_lm}. Diagnostic calls were {diagnostic_calls} in {diagnostic_calls_window}, against {diagnostic_calls_l"
+      }
+    }
+  ],
+  "slots": {
+    "month": "November 2024",
+    "month_ly": "November 2023",
+    "month_lm": "October 2024",
+    "leads": "82",
+    "leads_window": "Nov 2024",
+    "leads_lm": "75",
+    "leads_window_lm": "Oct 2024",
+    "mqls": "21",
+    "mqls_window": "Nov 2024",
+    "mqls_lm": "21",
+    "mqls_window_lm": "Oct 2024",
+    "diagnostic_calls": "8",
+    "diagnostic_calls_window": "Nov 2024",
+    "diagnostic_calls_lm": "6",
+    "diagnostic_calls_window_lm": "Oct 2024",
+    "paid_clients": "4",
+    "paid_clients_window": "Nov 2024",
+    "paid_clients_lm": "3",
+    "paid_clients_window_lm": "Oct 2024",
+    "revenue": "BDT 93,000",
+    "revenue_window": "Nov 2024",
+    "revenue_lm": "BDT 85,000",
+    "revenue_window_lm": "Oct 2024",
+    "mql_rate": "24.2%",
+    "mql_rate_window": "Sep-Nov 2024",
+    "mql_rate_lm": "23.7%",
+    "mql_rate_window_lm": "Aug-Oct 2024",
+    "triage_pass_cold_reactivation": "18.8%",
+    "triage_pass_cold_reactivation_lm": "0.0%",
+    "lead_share_channel_cold_reactivation": "7.3%",
+    "lead_share_channel_cold_reactivation_lm": "9.6%",
+    "lead_share_channel_educator_referral": "0.0%",
+    "lead_share_channel_educator_referral_lm": "0.0%",
+    "triage_pass_facebook": "8.1%",
+    "triage_pass_facebook_lm": "7.1%",
+    "lead_share_channel_facebook": "33.8%",
+    "lead_share_channel_facebook_lm": "31.6%",
+    "triage_pass_instagram": "14.3%",
+    "triage_pass_instagram_lm": "4.3%",
+    "lead_share_channel_instagram": "16.0%",
+    "lead_share_channel_instagram_lm": "13.0%",
+    "triage_pass_warm_referral": "61.7%",
+    "triage_pass_warm_referral_lm": "64.4%",
+    "lead_share_channel_warm_referral": "21.5%",
+    "lead_share_channel_warm_referral_lm": "25.4%",
+    "triage_pass_whatsapp_organic": "21.3%",
+    "triage_pass_whatsapp_organic_lm": "22.2%",
+    "lead_share_channel_whatsapp_organic": "21.5%",
+    "lead_share_channel_whatsapp_organic_lm": "20.3%",
+    "lead_share_destination_australia": "26.9%",
+    "lead_share_destination_australia_lm": "24.9%",
+    "lead_share_destination_canada": "34.7%",
+    "lead_share_destination_canada_lm": "33.3%",
+    "lead_share_destination_other": "5.9%",
+    "lead_share_destination_other_lm": "8.5%",
+    "lead_share_destination_uk": "18.3%",
+    "lead_share_destination_uk_lm": "18.6%",
+    "lead_share_destination_usa": "14.2%",
+    "lead_share_destination_usa_lm": "14.7%",
+    "close_rate": "5.6%",
+    "close_rate_window": "Aug-Oct 2024",
+    "close_rate_lm": "4.6%",
+    "close_rate_window_lm": "Jul-Sep 2024",
+    "diag_to_close": "62.5%",
+    "diag_to_close_window": "Aug-Oct 2024",
+    "diag_to_close_lm": "60.0%",
+    "diag_to_close_window_lm": "Jul-Sep 2024",
+    "revenue_by_tier_application_support": "BDT 70,000",
+    "revenue_by_tier_application_support_lm": "BDT 70,000",
+    "revenue_by_tier_full_mentorship": "BDT 0",
+    "revenue_by_tier_full_mentorship_lm": "BDT 0",
+    "revenue_by_tier_standalone": "BDT 23,000",
+    "revenue_by_tier_standalone_lm": "BDT 15,000",
+    "revenue_per_client_window": "Sep-Nov 2024",
+    "revenue_per_client_window_lm": "Aug-Oct 2024",
+    "revenue_per_lead_cold_reactivation": "BDT 0",
+    "revenue_per_lead_cold_reactivation_lm": "BDT 0",
+    "revenue_per_lead_facebook": "BDT 0",
+    "revenue_per_lead_facebook_lm": "BDT 0",
+    "revenue_per_lead_instagram": "BDT 0",
+    "revenue_per_lead_instagram_lm": "BDT 0",
+    "revenue_per_lead_warm_referral": "BDT 5,733",
+    "revenue_per_lead_warm_referral_lm": "BDT 2,714",
+    "revenue_per_lead_whatsapp_organic": "BDT 556",
+    "revenue_per_lead_whatsapp_organic_lm": "BDT 2,955",
+    "lost_reason_share_family_decision": "0.0%",
+    "lost_reason_share_family_decision_lm": "0.0%",
+    "lost_reason_share_free_info_seeker": "35.9%",
+    "lost_reason_share_free_info_seeker_lm": "28.2%",
+    "lost_reason_share_funding_issues": "0.0%",
+    "lost_reason_share_funding_issues_lm": "0.0%",
+    "lost_reason_share_no_ielts": "11.4%",
+    "lost_reason_share_no_ielts_lm": "9.7%",
+    "lost_reason_share_no_documents": "0.0%",
+    "lost_reason_share_no_documents_lm": "0.0%",
+    "lost_reason_share_price_mismatch": "20.4%",
+    "lost_reason_share_price_mismatch_lm": "17.7%",
+    "lost_reason_share_profile_too_weak": "0.0%",
+    "lost_reason_share_profile_too_weak_lm": "0.0%",
+    "lost_reason_share_scholarship_dependent": "0.0%",
+    "lost_reason_share_scholarship_dependent_lm": "0.0%",
+    "lost_reason_share_timing_not_right": "0.0%",
+    "lost_reason_share_timing_not_right_lm": "0.0%",
+    "lost_reason_share_went_silent": "32.3%",
+    "lost_reason_share_went_silent_lm": "44.4%"
+  },
+  "drivers": [
+    {
+      "id": "E03",
+      "text": "the launch of the Masters and PG track (from Aug 2024)",
+      "figures": [
+        "leads"
+      ],
+      "relates_to": "leads"
+    },
+    {
+      "id": "E05",
+      "text": "the start of Cold Reactivation, which revisits old leads (from Aug 2024)",
+      "figures": [
+        "leads"
+      ],
+      "relates_to": "leads"
+    }
+  ],
+  "created": "2026-10-28T13:15:40",
+  "bullets": [
+    "Leads were {leads} in {leads_window}, against {leads_lm} in {leads_window_lm}. This coincides with {driver:E03}.",
+    "MQLs were {mqls} in {mqls_window}, against {mqls_lm} in {mqls_window_lm}. Diagnostic calls were {diagnostic_calls} in {diagnostic_calls_window}, against {diagnostic_calls_lm} in {diagnostic_calls_window_lm}.",
+    "Paid clients were {paid_clients} in {paid_clients_window}, against {paid_clients_lm} in {paid_clients_window_lm}. Revenue was {revenue} in {revenue_window}, against {revenue_lm} in {revenue_window_lm}.",
+    "Close rate was {close_rate} for {close_rate_window}, against {close_rate_lm} for {close_rate_window_lm}. Diagnostic call to close was {diag_to_close} for {diag_to_close_window}, against {diag_to_close_lm} for {diag_to_close_window_lm}.",
+    "Watch the close rate, now {close_rate}, and the MQL rate, now {mql_rate}."
+  ],
+  "rendered": [
+    "Leads were 82 in Nov 2024, against 75 in Oct 2024. This coincides with the launch of the Masters and PG track (from Aug 2024).",
+    "MQLs were 21 in Nov 2024, against 21 in Oct 2024. Diagnostic calls were 8 in Nov 2024, against 6 in Oct 2024.",
+    "Paid clients were 4 in Nov 2024, against 3 in Oct 2024. Revenue was BDT 93,000 in Nov 2024, against BDT 85,000 in Oct 2024.",
+    "Close rate was 5.6% for Aug-Oct 2024, against 4.6% for Jul-Sep 2024. Diagnostic call to close was 62.5% for Aug-Oct 2024, against 60.0% for Jul-Sep 2024.",
+    "Watch the close rate, now 5.6%, and the MQL rate, now 24.2%."
+  ]
+}

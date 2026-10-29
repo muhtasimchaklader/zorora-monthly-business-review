@@ -1,0 +1,20 @@
+{
+  "data_folder": "data/reconstructed",
+  "files": {
+    "contacts": "zorora_contacts_v3_1.csv",
+    "pipeline": "zorora_pipeline_v3.csv",
+    "revenue": "zorora_revenue_v3.csv"
+  },
+  "data_start_month": "2023-06",
+  "comparison_start_month": "2024-01",
+  "report_start_month": "2024-01",
+  "report_end_month": "2026-05",
+  "rolling_months": 3,
+  "min_denominator": 10,
+  "driver_shift_points": 5,
+  "currency": "BDT",
+  "bdt_per_cad": 86,
+  "cad_rate_date": "13 Oct 2026",
+  "cad_rate_source": "Wise",
+  "model": "claude-sonnet-5-5"
+}
